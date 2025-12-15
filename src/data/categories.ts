@@ -1,0 +1,118 @@
+import { Category } from './types';
+
+export const categories: Category[] = [
+  {
+    id: 'risk-analysis',
+    name: 'Risk Analysis',
+    description: 'Identify potential risks, liabilities, and red flags',
+    icon: 'AlertTriangle',
+    longDescription: 'Surface hidden liabilities, indemnification clauses, and termination risks before they become costly problems. Our risk analysis prompts help legal teams and executives understand exposure in minutes, not hours.',
+    useCases: [
+      'Pre-signature risk assessment',
+      'Vendor contract evaluation',
+      'M&A due diligence',
+      'Insurance coverage review',
+    ],
+    benefits: [
+      'Reduce legal review time by up to 80%',
+      'Catch risks that manual review often misses',
+      'Standardize risk assessment across teams',
+    ],
+    bestFor: ['Legal Teams', 'Risk Officers', 'Executives', 'Procurement'],
+  },
+  {
+    id: 'clause-extraction',
+    name: 'Clause Extraction',
+    description: 'Find and extract specific clauses, terms, and obligations',
+    icon: 'FileSearch',
+    longDescription: 'Automatically locate and extract the exact clauses you need—payment terms, IP rights, confidentiality provisions, and more. Stop scrolling through 50-page contracts to find what matters.',
+    useCases: [
+      'Payment terms analysis',
+      'IP ownership verification',
+      'Confidentiality scope review',
+      'Warranty and liability extraction',
+    ],
+    benefits: [
+      'Find specific clauses in seconds',
+      'Build clause libraries from existing contracts',
+      'Ensure no critical terms are overlooked',
+    ],
+    bestFor: ['Paralegals', 'Contract Managers', 'Legal Operations'],
+  },
+  {
+    id: 'compliance-review',
+    name: 'Compliance Review',
+    description: 'Verify regulatory compliance and policy adherence',
+    icon: 'ShieldCheck',
+    longDescription: 'Ensure your agreements meet regulatory requirements and internal policies. From GDPR to SOC 2, our compliance prompts help you maintain your security posture and avoid costly violations.',
+    useCases: [
+      'GDPR data processing verification',
+      'SOC 2 vendor assessment',
+      'HIPAA compliance check',
+      'Internal policy adherence',
+    ],
+    benefits: [
+      'Systematic compliance verification',
+      'Audit-ready documentation',
+      'Reduce regulatory risk exposure',
+    ],
+    bestFor: ['Compliance Officers', 'Privacy Teams', 'Security Teams', 'Legal'],
+  },
+  {
+    id: 'contract-comparison',
+    name: 'Contract Comparison',
+    description: 'Compare versions and identify critical changes',
+    icon: 'GitCompare',
+    longDescription: 'Understand exactly what changed between contract versions. Whether comparing against your standard terms or reviewing redlines from counterparties, catch every modification that matters.',
+    useCases: [
+      'Redline review and analysis',
+      'Standard terms deviation tracking',
+      'Version history comparison',
+      'Amendment impact assessment',
+    ],
+    benefits: [
+      'Never miss a critical change',
+      'Accelerate redline review cycles',
+      'Maintain negotiation leverage',
+    ],
+    bestFor: ['Legal Teams', 'Sales Operations', 'Procurement', 'Contract Managers'],
+  },
+  {
+    id: 'summary-insights',
+    name: 'Summary & Insights',
+    description: 'Generate executive summaries and key term overviews',
+    icon: 'Lightbulb',
+    longDescription: 'Transform complex legal documents into clear, actionable insights. Generate executive summaries, obligation maps, and deadline trackers that keep stakeholders informed without the legalese.',
+    useCases: [
+      'Executive briefings',
+      'Board presentation prep',
+      'Obligation and deadline mapping',
+      'Key terms at-a-glance reports',
+    ],
+    benefits: [
+      'Brief leadership in minutes',
+      'Track commitments automatically',
+      'Improve cross-functional communication',
+    ],
+    bestFor: ['Executives', 'Project Managers', 'Business Development', 'Finance'],
+  },
+  {
+    id: 'negotiation-support',
+    name: 'Negotiation Support',
+    description: 'Get revision suggestions and identify leverage points',
+    icon: 'Scale',
+    longDescription: 'Negotiate smarter with AI-powered suggestions. Identify one-sided terms, generate balanced alternatives, and find leverage points that strengthen your position at the negotiating table.',
+    useCases: [
+      'Counterproposal drafting',
+      'Leverage point identification',
+      'Risk-balanced alternative terms',
+      'Negotiation strategy planning',
+    ],
+    benefits: [
+      'Close deals faster with better terms',
+      'Identify negotiation opportunities',
+      'Build consistent negotiation playbooks',
+    ],
+    bestFor: ['Legal Teams', 'Sales', 'Procurement', 'Business Development'],
+  },
+];
