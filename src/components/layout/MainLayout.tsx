@@ -50,12 +50,8 @@ export function MainLayout({
         }}
         selectedTags={selectedTags}
         onTagToggle={onTagToggle}
-        selectedTools={selectedTools}
-        onToggleTool={onToggleTool}
         selectedOutputType={selectedOutputType}
         onOutputTypeChange={onOutputTypeChange}
-        selectedDifficulty={selectedDifficulty}
-        onDifficultyChange={onDifficultyChange}
         counts={counts}
         isOpen={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
