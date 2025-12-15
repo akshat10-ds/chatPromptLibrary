@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import { prompts, categories, OutputType } from '@/data';
 import { VoteButtons } from '@/components/ui/VoteButtons';
 import { CopyButton } from '@/components/prompts/CopyButton';
-import { Comments } from '@/components/prompts/Comments';
 import { useVoteContext } from '@/contexts/VoteContext';
 import { ArrowLeft, Clock, Users } from 'lucide-react';
 
@@ -276,8 +275,6 @@ export default function PromptDetailPage() {
             </div>
           </motion.div>
 
-          {/* Comments Section */}
-          <Comments promptId={prompt.id} />
         </article>
       </main>
     </div>
