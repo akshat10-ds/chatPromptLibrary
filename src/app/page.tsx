@@ -6,7 +6,8 @@ import { usePromptFilters } from '@/hooks/usePromptFilters';
 import { Sidebar } from '@/components/layout/Sidebar';
 import { UseCaseCard } from '@/components/prompts/UseCaseCard';
 import { EmptyState } from '@/components/ui/EmptyState';
-import { Search, SlidersHorizontal, X, LayoutGrid, List } from 'lucide-react';
+import { SlidersHorizontal, X, LayoutGrid, List } from 'lucide-react';
+import { SearchInput } from '@/components/filters/SearchInput';
 import { SortOption, prompts as allPrompts, categories } from '@/data';
 import Link from 'next/link';
 
@@ -124,17 +125,15 @@ function PromptLibrary() {
               </button>
 
               {/* Search Input */}
-              <div className="flex-grow relative">
-                <Search
-                  size={18}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 text-text-tertiary pointer-events-none"
-                />
-                <input
-                  type="text"
-                  placeholder="Search use cases"
+              <div className="flex-grow">
+                <SearchInput
                   value={search}
-                  onChange={(e) => setSearch(e.target.value)}
-                  className="w-full pl-11 pr-4 py-3 bg-surface border border-border-subtle rounded-lg text-text-primary placeholder:text-text-tertiary focus:outline-none focus:border-border transition-colors"
+                  onChange={setSearch}
+                  onCategorySelect={setCategory}
+                  onTagSelect={toggleTag}
+                  selectedCategory={category}
+                  selectedTags={tags}
+                  placeholder="Search use cases"
                 />
               </div>
 
